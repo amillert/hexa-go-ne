@@ -32,7 +32,7 @@ func (api *Adapter) GetAddition(a, b int32) (int32, error) {
 }
 
 func (api *Adapter) GetSubtraction(a, b int32) (int32, error) {
-	res, err := api.arithmetic.Subtration(a, b)
+	res, err := api.arithmetic.Subtraction(a, b)
 	if err != nil {
 		fmt.Printf("failed on subtraction: %v\n", err)
 		return 0, err
